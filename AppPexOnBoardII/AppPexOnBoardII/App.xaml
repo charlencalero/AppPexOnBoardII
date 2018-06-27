@@ -3,6 +3,49 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppPexOnBoardII.App">
 	<Application.Resources>
-    
-	</Application.Resources>
+        <ResourceDictionary>
+
+            <Style x:Key="Font-pex1" TargetType="Label">
+                <Setter Property ="FontSize" Value="14"/>
+                <Setter Property="Label.FontFamily">
+                    <OnPlatform x:TypeArguments="x:String">
+                        <OnPlatform.iOS>Exo</OnPlatform.iOS>
+                        <OnPlatform.Android>Fonts/Exo-Regular.otf#Exo</OnPlatform.Android>
+                    </OnPlatform>
+                </Setter>
+            </Style>
+
+            <Style x:Key="Font-pex2" TargetType="Label">
+                <Setter Property ="FontSize" Value="14"/>
+                <Setter Property="Label.FontFamily">
+                    <OnPlatform x:TypeArguments="x:String">
+                        <OnPlatform.iOS>Exo</OnPlatform.iOS>
+                        <OnPlatform.Android>Fonts/Exo-Bold.otf#Exo</OnPlatform.Android>
+                    </OnPlatform>
+                </Setter>
+            </Style>
+
+            <Style x:Key="Font-digi1" TargetType="Label">
+                <Setter Property ="FontSize" Value="14"/>
+                <Setter Property="Label.FontFamily">
+                    <OnPlatform x:TypeArguments="x:String">
+                        <OnPlatform.iOS>DS-Digital</OnPlatform.iOS>
+                        <OnPlatform.Android>Fonts/DS-DIGI.ttf#DS-Digital</OnPlatform.Android>
+                    </OnPlatform>
+                </Setter>
+            </Style>
+
+            <Style x:Key="Font-digi2" TargetType="Label">
+                <Setter Property ="FontSize" Value="14"/>
+                <Setter Property="Label.FontFamily">
+                    <OnPlatform x:TypeArguments="x:String">
+                        <OnPlatform.iOS>DS-Digital</OnPlatform.iOS>
+                        <OnPlatform.Android>Fonts/DS-DIGIB.ttf#DS-Digital</OnPlatform.Android>
+                    </OnPlatform>
+                </Setter>
+            </Style>
+
+
+        </ResourceDictionary>
+    </Application.Resources>
 </Application>

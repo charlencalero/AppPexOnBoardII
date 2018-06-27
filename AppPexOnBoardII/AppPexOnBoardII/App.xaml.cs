@@ -7,7 +7,9 @@ namespace AppPexOnBoardII
 {
 	public partial class App : Application
 	{
-		public App ()
+
+        public static MasterDetailPage MasterDetail { get; set; }
+        public App ()
 		{
 			InitializeComponent();
 

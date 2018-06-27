@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppPexOnBoardII.Pages.Master"
+             Title="Operaciones">
+    <ContentPage.Content>
+        <StackLayout  BackgroundColor="White" Padding="20" >
+            <StackLayout Padding="2,5,0,5" Orientation="Vertical">
+                <Image x:Name="LogoMenu" Source="logopex.png" HeightRequest="100" WidthRequest="100" />
+                <Label HorizontalTextAlignment="Center" Text="Pex on Board" TextColor="Black" Font="Bold" FontSize="25" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Margin="4,0"/>
+            </StackLayout>
+     
+
+
+
+            <BoxView Color="Silver" HeightRequest="1"/>
+            <!--Menu Salir-->
+            <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                <Image  Source="link_icon.png" HeightRequest="20" WidthRequest="20"/>
+                <Label Text="Configuracion" TextColor="Black" VerticalOptions="Center" FontSize="16"/>
+
+            </StackLayout>
+
+            <BoxView Color="Silver" HeightRequest="1"/>
+            <!--Menu Salir-->
+            <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                <Image  Source="link_icon.png" HeightRequest="20" WidthRequest="20"/>
+                <Label Text="Registro de Alertas" TextColor="Black" VerticalOptions="Center" FontSize="16"/>
+
+            </StackLayout>
+
+            <BoxView Color="Silver" HeightRequest="1"/>
+            <!--Menu Salir-->
+            <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                <Image  Source="link_icon.png" HeightRequest="20" WidthRequest="20"/>
+                <Label Text="Reporte de Sensores" TextColor="Black" VerticalOptions="Center" FontSize="16"/>
+
+            </StackLayout>
+
+            <BoxView Color="Silver" HeightRequest="1"/>
+            <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                <Image  Source="link_icon.png" HeightRequest="20" WidthRequest="20"/>
+                <Label Text="Reporte de Alertas" TextColor="Black" VerticalOptions="Center" FontSize="16"/>
+
+            </StackLayout>
+            <BoxView Color="Silver" HeightRequest="1"/>
+            <StackLayout>
+
+                <Image Source="logovinci.jpg" HeightRequest="50" Margin="0,30"></Image>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

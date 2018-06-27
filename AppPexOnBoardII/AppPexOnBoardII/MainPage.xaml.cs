@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppPexOnBoardII.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,11 +8,15 @@ using Xamarin.Forms;
 
 namespace AppPexOnBoardII
 {
-	public partial class MainPage : ContentPage
-	{
-		public MainPage()
-		{
-			InitializeComponent();
-		}
-	}
+    public partial class MainPage : MasterDetailPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            Master = new Master();
+            Detail = new NavigationPage(new Detail());
+
+            App.MasterDetail = this;
+        }
+    }
 }

@@ -94,6 +94,10 @@
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <BundleResource Include="Resources\Fonts\DS-DIGI.ttf" />
+    <BundleResource Include="Resources\Fonts\DS-DIGIB.ttf" />
+    <BundleResource Include="Resources\Fonts\Exo-Bold.otf" />
+    <BundleResource Include="Resources\Fonts\Exo-Regular.otf" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -147,7 +151,7 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.0.0.482510" />
+    <PackageReference Include="Xamarin.Forms" Version="3.0.0.446417" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
@@ -155,5 +159,32 @@
       <Project>{8CFAAEC7-AB78-4949-8146-5244910C14B5}</Project>
       <Name>AppPexOnBoardII</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="error_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="iniciovinci.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="link_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="logopex.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="logovinci.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="ok_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="splash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="warning_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="warning_icon32.png" />
   </ItemGroup>
 </Project>

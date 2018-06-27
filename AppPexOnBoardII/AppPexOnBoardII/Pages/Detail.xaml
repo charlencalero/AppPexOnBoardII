@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppPexOnBoardII.Pages.Detail">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Orientation="Vertical" HorizontalOptions="Center" Padding="10">
+
+                <Grid HorizontalOptions="Center" WidthRequest="300">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto"/>
+
+                    </Grid.ColumnDefinitions>
+
+
+
+                    <Label  Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4" HorizontalTextAlignment="Center" FontSize="Large" Style="{StaticResource Font-pex2}"  Text="PEX ON BOARD" TextColor="Black" ></Label>
+
+                   
+                    <Label Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="4" HorizontalTextAlignment="Center"  Style="{StaticResource Font-pex2}" Text="ANALISIS SENSORES OBDII" TextColor="White" BackgroundColor="#F6921E"></Label>
+
+                    <Image HeightRequest="40" Grid.Column="0" Grid.Row="6" Source="ok_icon.png"></Image>
+                    <Label Grid.Column="1" Grid.Row="6" WidthRequest="150" Text="MIL STATUS" FontSize="Medium" Style="{StaticResource Font-digi1}"></Label>
+                    <Label Grid.Column="2" Grid.Row="6" HorizontalTextAlignment="End" FontAttributes="Bold" Text="OFF" FontSize="Medium"  Style="{StaticResource Font-digi2}"></Label>
+                    <Image HeightRequest="40" Grid.Column="0" Grid.Row="7" Source="ok_icon.png"></Image>
+                    <Label Grid.Column="1" Grid.Row="7" Text="START ENGINE" FontSize="Medium" Style="{StaticResource Font-digi1}"></Label>
+                    <Label Grid.Column="2" Grid.Row="7"  HorizontalTextAlignment="End" FontAttributes="Bold" Text="456 HR" FontSize="Medium" Style="{StaticResource Font-digi2}"></Label>
+                    <Image HeightRequest="40" Grid.Column="0" Grid.Row="8" Source="ok_icon.png"></Image>
+                    <Label Grid.Column="1" Grid.Row="8" Text="ENG SPEED" FontSize="Medium" Style="{StaticResource Font-digi1}"></Label>
+                    <Label Grid.Column="2" Grid.Row="8"  HorizontalTextAlignment="End" FontAttributes="Bold" Text="756 RPM" FontSize="Medium" Style="{StaticResource Font-digi2}"></Label>
+                    <Image HeightRequest="40" Grid.Column="0" Grid.Row="9" Source="error_icon.png"></Image>
+                    <Label Grid.Column="1" Grid.Row="9" Text="COOLANT" FontSize="Medium" Style="{StaticResource Font-digi1}"></Label>
+                    <Label Grid.Column="2" Grid.Row="9"  HorizontalTextAlignment="End" FontAttributes="Bold" Text="80°" FontSize="Medium"  Style="{StaticResource Font-digi2}"></Label>
+                    <Image HeightRequest="40" Grid.Column="0" Grid.Row="10" Source="error_icon.png"></Image>
+                    <Label Grid.Column="1" Grid.Row="10" Text="FUEL SYS"  FontSize="Medium" Style="{StaticResource Font-digi1}"></Label>
+                    <Label Grid.Column="2" Grid.Row="10"  HorizontalTextAlignment="End" FontAttributes="Bold" Text="CLSD" FontSize="Medium"  Style="{StaticResource Font-digi2}"></Label>
+
+                    <Label Grid.Column="0" Grid.Row="11" Grid.ColumnSpan="4" HorizontalTextAlignment="Center"   Style="{StaticResource Font-pex2}" Text="CODIGOS ERROR " TextColor="White" BackgroundColor="#F6921E"></Label>
+
+
+                    <Label Grid.Column="0" Grid.Row="12"  Style="{StaticResource Font-pex2}"  Text="P0300"></Label>
+                    <Label Grid.Column="1" Grid.Row="12" Grid.ColumnSpan="3"  Style="{StaticResource Font-pex1}"   HorizontalTextAlignment="Center"  Text="Uno o varios cilindros fallan . Falsas explosiones detectadas"></Label>
+
+                    <Label Grid.Column="0" Grid.Row="13"  Style="{StaticResource Font-pex2}" Text="P0265"></Label>
+                    <Label Grid.Column="1" Grid.Row="13" Grid.ColumnSpan="3"  Style="{StaticResource Font-pex1}"  HorizontalTextAlignment="Center"   Text=" Señal alta inyector cilindro 2"></Label>
+
+                    <Label Grid.Column="0" Grid.Row="14"  Style="{StaticResource Font-pex2}" Text="P0118"></Label>
+                    <Label Grid.Column="1" Grid.Row="14"  Grid.ColumnSpan="3"  Style="{StaticResource Font-pex1}" HorizontalTextAlignment="Center"   Text="Señal alta sensor de temperatura del anticongelante"></Label>
+
+                    <Label Grid.Column="0" Grid.Row="15"  Style="{StaticResource Font-pex2}"  Text="P0003"></Label>
+                    <Label Grid.Column="1" Grid.Row="15" Grid.ColumnSpan="3"  Style="{StaticResource Font-pex1}" HorizontalTextAlignment="Center"   Text="Fallo eléctrico en el regulador de combustible Circuito Pobre"></Label>
+
+                    <Label Grid.Column="0" Grid.Row="16"  Style="{StaticResource Font-pex2}" Text="P0410"></Label>
+                    <Label Grid.Column="1" Grid.Row="16" Grid.ColumnSpan="3"  Style="{StaticResource Font-pex1}"  HorizontalTextAlignment="Center"   Text="Sistema de inyección de aire secundario DEFECTUOSO"></Label>
+
+
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
